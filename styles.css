@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 10%;
+    top: 20%;
 }
 
 .gridcontainer  {
@@ -35,25 +35,23 @@ body {
 
 .gridsquare:hover {
     animation-name: square;
-    animation-duration: 1500ms;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     animation-play-state: running;
 }
 
 @keyframes square {
 
     50% { 
-        transform: scale(2.5) rotateZ(-360deg);
+        transform: scale(1.2);
         border-radius: 0%;
         border: 2px solid white;
         background: white;
         position: relative;
+        box-shadow: 1px 1px 10px 1px #999;
     }
 
-    60% {
-        transform: rotate3D(-360deg);
-    }
 }
